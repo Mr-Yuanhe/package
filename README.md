@@ -16,3 +16,8 @@
 
 ## Python
 - [Python基础教程](http://package.yuanheweb.com/python/python基础教程.zip)
+
+## linux-file
+
+- [tomcat](http://package.yuanheweb.com/linux-file/tomcat.gz)
+- [solo](http://package.yuanheweb.com/linux-file/solo-v3.6.4.war)

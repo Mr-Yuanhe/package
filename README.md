@@ -19,5 +19,5 @@
 
 ## linux-file
 
-- [tomcat](http://package.yuanheweb.com/linux-file/tomcat.gz)
-- [solo](http://package.yuanheweb.com/linux-file/solo-v3.6.4.war)
+- [tomcat-9.0.24](http://package.yuanheweb.com/linux-file/apache-tomcat-9.0.24.tar.gz)
+- [solo-3.6.4](http://package.yuanheweb.com/linux-file/solo-v3.6.4.war)

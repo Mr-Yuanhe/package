@@ -8,6 +8,7 @@
 
 ## HTML
 - [jQuery文件](http://package.yuanheweb.com/html/jquery.zip)
+- [validate文件](http://package.yuanheweb.com/html/validate.zip)
 - [动态背景模板](http://package.yuanheweb.com/html/动态背景模板.zip)
 - [3D旋转图片模板](http://package.yuanheweb.com/html/3D旋转图片.zip)```前缀为0的图片大小为100*100，其他的大小为400*400，preview为背景图片```
 

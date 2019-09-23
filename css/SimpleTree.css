@@ -5,8 +5,12 @@
 
 /* 超链接 */
 .st_tree a{text-decoration:none; margin-left: 10px}
+/* 鼠标未点击的超链接 */
+.st_tree a:link{color:blue}
+/* 已访问的超链接 */
+.st_tree a:visited{color:blue}
 /* 鼠标经过的超链接 */
-.st_tree a:hover{color:#f33;text-decoration:underline;}
+.st_tree a:hover{color:red}
 /* 菜单 */
 .st_tree ul{padding:0px;margin:20px;}
 /* 菜单项 */

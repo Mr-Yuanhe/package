@@ -6,6 +6,7 @@
   right: 0;
   height: 100vh;
   background-color: #171717;
+  overflow: auto;
 }
 .particle-network-animation::before {
   z-index: -2;

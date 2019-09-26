@@ -5,7 +5,13 @@
   left: 0;
   right: 0;
   height: 100vh;
-  background-color: #171717;
+  /* background-color: #171717; */
+  background: -moz-linear-gradient(top, #033833 0%, #0a8176 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#033833), color-stop(100%,#0a8176));
+  background: -webkit-linear-gradient(top, #033833 0%,#0a8176 100%);
+  background: -o-linear-gradient(top, #033833 0%,#0a8176 100%);
+  background: -ms-linear-gradient(top, #033833 0%,#0a8176 100%);
+  background: linear-gradient(to bottom, #033833 0%,#0a8176 100%);
   overflow: auto;
 }
 .particle-network-animation::before {

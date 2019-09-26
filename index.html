@@ -1,92 +1,182 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>下载中心</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery垂直手风琴多级下拉菜单代码</title>
 
-<link rel="stylesheet" type="text/css" href="css/SimpleTree.css"/>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js-back/jquery.min.js"></script>
+	<link type="text/css" href="css-back/style-back.css" rel="stylesheet">
+	<style>
+		span {
+			position: absolute;
+			color: #fff;
+			font-size: 48px;
+			margin: 30px auto;
+			left: 35%;
+		}
 
-<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
-<script type="text/javascript" src="js/SimpleTree.js"></script>
-<script type="text/javascript">
-$(function(){
+		a:link {
+			color: #2c6a9e;
+		}
 
-	$(".st_tree").SimpleTree({
-	
-	});
-	
-});
-</script>
-<style>
+		a:hover {
+			color: red;
+		}
 
-</style>
+		li {
+			border-radius: 20px;
+			/* background-color: red; */
+		}
+
+		label {
+			border-radius: 20px;
+			background-color: rgba(36, 39, 58, 0.3);
+		}
+
+		a {
+			border-radius: 20px;
+			margin-left: 10px;
+			background-color: rgba(36, 39, 58, 0.3);
+
+		}
+
+		.has-children {
+			border-radius: 20px;
+		}
+
+		#box {
+			width: 550px;
+			position: absolute;
+			top: 100px;
+			left: 30%;
+		}
+
+		.cd-accordion-menu {
+			display: inline;
+
+		}
+
+		/* canvas{
+	float: left;
+} */
+	</style>
+
 </head>
+
 <body>
+	<div class='particle-network-animation'>
+		<span>点击文件直接下载</span>
+		<div id="box">
+			<ul class="cd-accordion-menu">
+				<li class="has-children">
+					<input type="checkbox" name="group-1" id="group-1">
+					<label for="group-1">Java-jar</label>
+					<ul>
+						<li class="has-children">
+							<input type="checkbox" name="sub-group-1" id="sub-group-1">
+							<label for="sub-group-1">Email</label>
+							<ul>
+								<li><a
+										href="http://package.yuanheweb.com/java-jar/email/activation.jar">activation.jar</a>
+								</li>
+								<li><a href="http://package.yuanheweb.com/java-jar/email/mail.jar">mail.jar</a></li>
+							</ul>
+						</li>
+						<li></li>
+					</ul>
+
+				</li>
+
+				<li class="has-children">
+					<input type="checkbox" name="group-2" id="group-2">
+					<label for="group-2">HTML</label>
+					<ul>
+						<li class="has-children">
+							<input type="checkbox" name="sub-group-2" id="sub-group-2">
+							<label for="sub-group-2">JavaScript库</label>
+							<ul>
+								<li><a href="http://package.yuanheweb.com/html/jquery.zip">jquery.zip</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="sub-group-21" id="sub-group-21">
+							<label for="sub-group-21">jQuery插件</label>
+							<ul>
+								<li><a href="http://package.yuanheweb.com/html/jQuery插件/validate.zip">validate.zip</a>
+								</li>
+								<li><a href="http://package.yuanheweb.com/html/jQuery插件/z-tree.zip">z-tree.zip</a></li>
+								<li><a href="http://package.yuanheweb.com/html/jQuery插件/layer.zip">layer.zip</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="sub-group-22" id="sub-group-22">
+							<label for="sub-group-22">Bootstrap</label>
+							<ul>
+								<li><a
+										href="http://package.yuanheweb.com/html/Bootstrap/Bootstrap-3.3.7.zip">Bootstrap-3.3.7.zip</a>
+								</li>
+								<li><a
+										href="http://package.yuanheweb.com/html/Bootstrap/Bootstrap-3.2中文离线文档.zip">Bootstrap中文离线手册</a>
+								</li>
+							</ul>
+						</li>
+						<li></li>
+					</ul>
+				</li>
+
+				<li class="has-children">
+					<input type="checkbox" name="group-3" id="group-3">
+					<label for="group-3">API</label>
+					<ul>
+						<li><a href="http://package.yuanheweb.com/api/JDK_API_1_6_zh_CN.CHM">JDK-API-1.6.chm</a></li>
+						<li><a href="http://package.yuanheweb.com/api/W3School离线手册.chm">W3School离线手册.chm</a></li>
+						<li><a href="http://package.yuanheweb.com/api/Linux常用命令大全.chm">Linux常用命令大全.chm</a></li>
+						<li><a href="http://package.yuanheweb.com/api/jQuery文档.chm">jQuery中文文档.chm</a></li>
+						<li></li>
+					</ul>
+				</li>
+
+				<li class="has-children">
+					<input type="checkbox" name="group-4" id="group-4">
+					<label for="group-4">Python</label>
+					<ul>
+						<li><a href="http://package.yuanheweb.com/python/python基础教程.zip">Python基础教程.zip</a></li>
+						<li></li>
+					</ul>
+				</li>
+				<li></li>
 
 
-<div>
-	<h1 style="text-align: center">点击文件直接下载</h1>
-</div>
-<div class="st_tree" style="width:400px;margin:10px auto;">
-	<ul>
-		<li><a href="#">JAVA</a></li>
-		<ul>
-				<li><a href="#">Email</a></li>
-				<ul>
-					<li><a target="_blank"; href="http://package.yuanheweb.com/java-jar/email/activation.jar">activation.jar</a></li>
-					<li><a target="_blank"; href="http://package.yuanheweb.com/java-jar/email/mail.jar">mail.jar</a></li>
-				</ul>
-		</ul>
-		<hr>
-		<li><a href="#">HTML</a></li>
-		<ul>
-				<li><a href="#">JavaScript库</a></li>
-				<ul>
-				<li><a href="http://package.yuanheweb.com/html/jquery.zip">jquery.zip</a></li>
-				</ul>
-				<hr>
-				<li><a href="#">jQuery插件</a></li>
-				<ul>
-					<li><a href="http://package.yuanheweb.com/html/jQuery插件/validate.zip">validate.zip</a></li>
-					<li><a href="http://package.yuanheweb.com/html/jQuery插件/z-tree.zip">z-tree.zip</a></li>
-					<li><a href="http://package.yuanheweb.com/html/jQuery插件/layer.zip">layer.zip</a></li>
-				</ul>
-				<hr>
-				<li><a href="#">Bootstrap</a></li>
-				<ul>
-					<li><a href="http://package.yuanheweb.com/html/bootstrap/bootstrap-3.3.7.zip">bootstrap-3.3.7.zip</a></li>
-					<li><a href="http://package.yuanheweb.com/html/bootstrap/Bootstrap-3.2中文离线文档.zip">bootstrap离线手册</a></li>
-				</ul>
-		</ul>
-		<hr>
+				<li class="has-children">
+					<input type="checkbox" name="group-5" id="group-5">
+					<label for="group-5">Linux</label>
+					<ul>
+						<li class="has-children">
+							<input type="checkbox" name="sub-group-5" id="sub-group-5">
+							<label for="sub-group-5">tools</label>
+							<ul>
+								<li><a href="http://package.yuanheweb.com/linux-file/apache-tomcat-9.0.24.tar.gz">tomcat-9.0.24.tar.gz</a></li>
+								<li><a href="http://package.yuanheweb.com/linux-file/solo-v3.6.4.war">solo-3.6.4.war</a></li>
+								<li></li>
+							</ul>
+						</li>
+						<li></li>
+					</ul>
+				</li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js-back/script.js"></script>
 
-
-		<li><a href="#">API</a></li>
-		<ul>
-			<li><a href="http://package.yuanheweb.com/api/JDK_API_1_6_zh_CN.CHM">JDK-API-1.6</a></li>
-			<li><a href="http://package.yuanheweb.com/api/W3School离线手册.chm">W3School离线手册</a></li>
-			<li><a href="http://package.yuanheweb.com/api/Linux常用命令大全.chm">Linux常用命令大全</a></li>
-			<li><a href="http://package.yuanheweb.com/api/jQuery文档.chm">jQuery中文文档</a></li>
-		</ul>
-		<hr>
-
-		<li><a href="#">Python</a></li>
-		<ul>
-			<li><a href="http://package.yuanheweb.com/python/python基础教程.zip">Python基础教程</a></li>
-		</ul>
-		<hr>
-
-		<li><a href="#">Linux</a></li>
-		<ul>
-				<li><a href="#">tools</a></li>
-				<ul>
-					<li><a href="http://package.yuanheweb.com/linux-file/apache-tomcat-9.0.24.tar.gz">tomcat-9.0.24</a></li>
-					<li><a href="http://package.yuanheweb.com/linux-file/solo-v3.6.4.war">solo-3.6.4</a></li>
-				</ul>
-		</ul>
-	</ul>
-
-</div>
 
 </body>
+
 </html>
